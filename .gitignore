@@ -1,0 +1,13 @@
+# shell install scripts
+**/*.run
+
+# .NET objects
+**/*.runtimeconfig.json
+**/*.il
+**/*.exe
+**/*.exe.mdb
+
+# L objects
+**/*.?.lo
+**/*.bc
+**/*.lh
