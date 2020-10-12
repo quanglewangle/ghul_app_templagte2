@@ -49,7 +49,8 @@ Once the prerequisites for development containers are working, clone this templa
 
 Visual Studio Code will create a container and a unique volume to hold your application.
 ## Getting started on native Linux
-ghūl is a native Linux program so a container is not needed. Simply clone the the repository into a folder. When you open the source file VSCode will open a dialog asking if you want to reopen the project in a container - decline this offer. You can stop VSCode from nagging either by checking the Don't ask again option or by deleting the project's .devcontainer folder.
+ghūl is a native Linux program so a container is not needed. Simply clone the the repository into a folder. When you open the source file VSCode will open a dialog asking if you want to reopen the project in a container - decline this offer. You can stop VSCode from nagging either by checking the "Don't ask again" option or by deleting the project's .devcontainer folder.
+
 ## Building the application
 The default VSCode build task is auto-configured, so you can build the application with either:
 - `Ctrl` + `Shift` + `B`, or
