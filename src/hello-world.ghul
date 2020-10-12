@@ -7,11 +7,16 @@ namespace HelloWorld is
             let writer = new HelloWorldWriter();
 
             writer.write_hello_world();
+           
         si
+  
     si
 
     class HelloWorldWriter is
+        count: long;
+
         init() is
+            count = 0L;
         si
 
         write_hello_world() is
@@ -26,6 +31,25 @@ namespace HelloWorld is
             for s in list do
                 System.Console.write(s);
             od
-        si        
+            System.Console.write_line(ackermann(1L,1L));
+            System.Console.write_line(count);
+        si   
+        ackermann(m: long, n: long) -> long is 
+           // System.Console.write("in ackermann. count:");
+           // System.Console.write_line(count);
+            count = count + 1L;
+            if(m > 0L) then
+    
+                if (n > 0L) then
+                    return ackermann(m - 1L, ackermann(m, n - 1L));
+                elif (n == 0L) then
+                    return ackermann(m - 1L, 1L);
+                fi
+            elif(m == 0L) then
+                if(n >= 0L) then
+                    return n + 1L;
+                fi    
+            fi
+        si
     si
 si

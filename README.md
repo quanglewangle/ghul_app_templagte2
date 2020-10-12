@@ -48,7 +48,8 @@ Once the prerequisites for development containers are working, clone this templa
 - Choose `+ Create a unique volume` when prompted
 
 Visual Studio Code will create a container and a unique volume to hold your application.
-
+## Getting started on native Linux
+ghūl is a native Linux program so a container is not needed. Simply clone the the repository into a folder. When you open the source file VSCode will open a dialog asking if you want to reopen the project in a container - decline this offer. You can stop VSCode from nagging either by checking the Don't ask again option or by deleting the project's .devcontainer folder.
 ## Building the application
 The default VSCode build task is auto-configured, so you can build the application with either:
 - `Ctrl` + `Shift` + `B`, or
@@ -59,6 +60,9 @@ The build output is a simple .NET console application (`hello-world.exe`), which
 - from the command line with Mono: `mono hello-world.exe`
 - from the command line with .NET Core: `dotnet hello-world.exe` (provided you have .NET Core installed - note, it's not pre-installed in the development container)
 - via the pre-configured VSCode test task: `Ctrl` + `Shift` + `P`, choose `Run Task`, choose the run task from the list
+
+## Using the template for your own application
+As well as renaming the source file you will need to change references to it in tasks.json, build/build.sh . Exit and restart VSCode.
 
 ## Nice to have
 ghūl source code looks best in the [Fira Code](https://github.com/tonsky/FiraCode) font. Fira Code combined with the `ss07` ligatures setting in `settings.json` gives the preferred rendering of ghūl operators:
